@@ -12,6 +12,8 @@
 
     $mako->mort(); //Retourne false
     // $mako->vie = 0; //Retourne true
+    
+    $korra->attaque($mako);
 
     var_dump($korra);
     var_dump($mako);

@@ -29,6 +29,15 @@
         public function mort(){
            return $this->vie == 0;
         }
+
+        public function attaque($cible){
+                //---$this //attaquant
+                //---$cible //défenseur
+                //---défense.vie -= attaquant.atk
+                $cible->vie -= $
+                $cible->vie = 20;
+                var_dump($cible);
+        }
     }
 
 
