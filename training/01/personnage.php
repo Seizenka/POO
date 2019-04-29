@@ -16,7 +16,7 @@
                 $this->vie = 100; //This permet de paramétrer directement une propriété
 
             } else { //Sinon on lui rajoute les points de vie qu'on lui a mis en paramètre
-                $this->vie = $this->vie + $vie;
+                $this->vie += $vie; //$this->vie + $vie;
             }
         }
 

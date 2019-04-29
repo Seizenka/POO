@@ -8,7 +8,7 @@
 
     $mako = new Personnage("Mako");
     // $mako->nom = "Mako";
-    $mako->regenerer(5);
+    $mako->regenerer();
 
     $mako->mort(); //Retourne false
     // $mako->vie = 0; //Retourne true
