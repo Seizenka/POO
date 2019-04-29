@@ -11,7 +11,7 @@
 
         public function regenerer($vie = null){
               
-            if(is_null($vie)){ //Si le nombre de vie est nombre, on revient à 100 de vie
+            if(is_null($vie)){ //Si le nombre de vie est null, on revient à 100 de vie
 
                 $this->vie = 100; //This permet de paramétrer directement une propriété
 
