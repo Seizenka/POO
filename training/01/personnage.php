@@ -1,8 +1,8 @@
 <?php
     
     class Personnage {
-        public $vie = 80; //Ajout de propriété->variable pour caractériser l'objet
-        public $atk = 50;
+        public $vie = 50; //Ajout de propriété->variable pour caractériser l'objet
+        public $atk = 40;
         public $nom;
 
         public function crier(){
@@ -37,3 +37,4 @@
 
 
 ?>
+

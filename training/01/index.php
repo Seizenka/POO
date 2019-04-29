@@ -15,10 +15,17 @@ $mako->mort(); //Retourne false
 
 $korra->attaque($mako);
 
+if($mako->mort()){
+    echo "Mako est mort RIP";
+} 
+else {
+    echo "Mako a survécu avec " . $mako->vie;
+}
 
-var_dump($korra);
-var_dump($mako);
-var_dump($mako->mort());
+
+// var_dump($korra);
+// var_dump($mako);
+// var_dump($mako->mort());
 
 
 
@@ -40,6 +47,7 @@ var_dump($mako->mort());
 <body>
     <h1>POO training</h1>
 
+    <!-- Lien de la vidéo : https://www.youtube.com/watch?v=xmoOvoiPNhU&list=PLjwdMgw5TTLVDKy8ikf5Df5fnMqY-ec16&index=3-->
 
 </body>
 
