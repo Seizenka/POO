@@ -18,6 +18,10 @@
             $this->nom = $nom;
 
         } //Manière plus concise, on met directement les noms des persos entre ()
+
+        public function mort(){
+           return $this->vie == 0;
+        }
     }
 
 

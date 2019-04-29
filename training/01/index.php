@@ -8,8 +8,12 @@
     $mako = new Personnage("Mako");
     // $mako->nom = "Mako";
 
+    $mako->mort(); //Retourne false
+    // $mako->vie = 0; //Retourne true
+
     var_dump($korra);
     var_dump($mako);
+    var_dump($mako->mort());
 
 
 
