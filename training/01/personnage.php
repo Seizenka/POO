@@ -9,8 +9,15 @@
             echo 'JE SUIS L\'AVATAR KORRA!';
         } //Ajout de méthode->fonction pour donner vie/action à l'objet
 
-        public function regenerer(){
-            $this->vie = 100; //This permet de paramétrer directement une propriété
+        public function regenerer($vie = null){
+              
+            if(is_null($vie)){ //Si le nombre de vie est nombre, on revient à 100 de vie
+
+                $this->vie = 100; //This permet de paramétrer directement une propriété
+
+            } else { //Sinon on lui rajoute les points de vie qu'on lui a mis en paramètre
+                $this->vie = $this->vie + $vie;
+            }
         }
 
         public function __construct($nom){
