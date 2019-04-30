@@ -20,8 +20,9 @@
     
         <?php
 
-                $form = new form(); //On crée un nouveau formulaire
+                $form = new Form(); //On crée un nouveau formulaire
                 echo $form->input('Prénom'); //On affiche avec echo le champ du formation "prénom"
+                echo $form->input('Mot de passe');
 
         ?>
 
