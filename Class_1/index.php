@@ -1,7 +1,4 @@
-<?php
-
-    require 'form.php';
-?>
+<?php require 'form.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -17,20 +14,20 @@
     <h1>Formulaire Class-1</h1>
 
     <section class="body-form">
-  
-        <?php
 
-                $form = new Form(array (
-                    "Prénom" => 'Cassandra'
-                )); //On crée un nouveau formulaire
-             
+        <form action="index.php" method="POST">
+
+            <?php
+
+                $form = new Form($_POST);
+
                 echo $form->input("Prénom"); //On affiche avec echo le champ du formation "prénom"
                 echo $form->input("Mot de passe"); //On affiche le champ "mot de passe"
                 echo $form->submit("Envoyer"); //On affiche le bouton "envoyer"
 
-                
+            ?>
 
-        ?>
+        </form>
 
     </section>
 </body>

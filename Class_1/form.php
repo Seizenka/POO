@@ -5,7 +5,7 @@
         private $data; //Pour garder en mémoire les données ----Par défaut c'est un tableau vide car on a pas de données
         public $surround = 'p'; //On le met en public si jamais on veut changer la méthode d'entourage en faisant : index.php $form->surround
 
-        public function __construct($data){
+        public function __construct($data = array()){
 
             $this->data = $data; //On envoie cette variable dans l'instance
 
