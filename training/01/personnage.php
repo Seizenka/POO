@@ -3,7 +3,7 @@
     class Personnage {
         public $vie = 50; //Ajout de propriété->variable pour caractériser l'objet
         public $atk = 40;
-        private $nom;
+        private $nom; //Private -> faire appel à un getter "getNom" pour faire un return
 
         public function crier(){
             echo 'JE SUIS L\'AVATAR KORRA!';

@@ -23,7 +23,7 @@ else {
 }
 
 
-echo '<p>' . $korra->getNom() . '</p>';
+echo '<p>' . $korra->getNom() . '</p>'; //Appel de la fonction du getter "getNom"
 
 // var_dump($korra);
 // var_dump($mako);
