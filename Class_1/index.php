@@ -17,12 +17,18 @@
     <h1>Formulaire Class-1</h1>
 
     <section class="body-form">
-    
+  
         <?php
 
-                $form = new Form(); //On crée un nouveau formulaire
-                echo $form->input('Prénom'); //On affiche avec echo le champ du formation "prénom"
-                echo $form->input('Mot de passe');
+                $form = new Form(array (
+                    "Prénom" => 'Cassandra'
+                )); //On crée un nouveau formulaire
+             
+                echo $form->input("Prénom"); //On affiche avec echo le champ du formation "prénom"
+                echo $form->input("Mot de passe");
+                echo $form->submit("Envoyer");
+
+                
 
         ?>
 
