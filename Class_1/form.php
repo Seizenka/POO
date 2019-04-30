@@ -10,19 +10,21 @@
 
         }//__construct prendra en paramétre les données du formulaire
 
+        private function surround($tag){
+
+
+        }//créer une fonction à l'intérieur de la classe qui servira quà l'intérieur
+
         public function input($name){
 
-            echo 'input type="submit" name="envoyer" value="send"/>';
-            
-        }
+            $this->surround('<input type="text" name="' . $name . '"/>', 'p'); //Deux paramétres 1. Notre champ de formulaire 2. par quoi on veut l'entourer "<p>"
+
+        } //On crée la fonction input qui prend en paramétre $name
 
         public function submit(){
 
-            echo 'input type="submit" name="envoyer" value="send"/>';
+            echo '<input type="submit" name="envoyer" value="send"/>';
 
         } //On crée la fonction "subtmit" 
 
     }
-
-
-?>
