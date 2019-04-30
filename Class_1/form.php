@@ -13,13 +13,19 @@
 
         private function surround($html){
 
-            return "<{$this->surround}>$html</{$this->surround}>";
+            return "<{$this->surround}>$html</{$this->surround}>"; // Pour que la variable soit interprétée par les " il faut rajouter {}
 
         }//créer une fonction à l'intérieur de la classe qui servira qu'à l'intérieur
 
+        private function getValue($index){
+
+            return isset($this->data[$index]) ? $this->data[$index] : null; //Traduction : Si ça existe on retourne $this->data[$index] (Cassandra) sinon c'est null autrement dit vide
+
+        } //Remplir automatiquement le champ avec "Cassandra" ----private car on en a besoin qu'à l'intérieur de la classe
+
         public function input($name){
 
-            return $this->surround('<input type="text" name="' . $name . '"/>'); //Deux paramétres 1. Notre champ de formulaire 2. par quoi on veut l'entourer "<p>" (blabla, 'p');
+            return $this->surround('<input type="text" name="' . $name . '" value="'. $this->getValue($name) . '"/>'); //Deux paramétres 1. Notre champ de formulaire 2. par quoi on veut l'entourer "<p>" (blabla, 'p');
 
         } //On crée la fonction input qui prend en paramétre $name
 

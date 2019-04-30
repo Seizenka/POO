@@ -25,8 +25,8 @@
                 )); //On crée un nouveau formulaire
              
                 echo $form->input("Prénom"); //On affiche avec echo le champ du formation "prénom"
-                echo $form->input("Mot de passe");
-                echo $form->submit("Envoyer");
+                echo $form->input("Mot de passe"); //On affiche le champ "mot de passe"
+                echo $form->submit("Envoyer"); //On affiche le bouton "envoyer"
 
                 
 
