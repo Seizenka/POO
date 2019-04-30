@@ -13,8 +13,19 @@
     <main id="main">
         <h1>Nouvelle version du formlaire POO</h1>
 
+        <!-- On entoure le formulaire -->
         <section class="body-form">
+            <?php
 
+                $form = new Form(); //Création d'un nouveau formulaire
+                echo $form->create($action); // créer le début du formulaire
+
+                echo $form->input('Veuillez mettre votre nom',$nom); // créer un input de type texte avec comme valeur par défaut $nom
+                echo $form->input('prenom',$prenom); //Input de type texte avec comme valeur par défaut $prenom
+
+                echo $form->submit('Envoyer'); //Bouton pour soumettre le formulaire se nommant "envoyer"
+                echo $form->end(); //On ferme le formulaire
+            ?>
         </section>
     </main>
 
