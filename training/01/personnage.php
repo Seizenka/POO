@@ -3,7 +3,7 @@
     class Personnage {
         public $vie = 50; //Ajout de propriété->variable pour caractériser l'objet
         public $atk = 40;
-        public $nom;
+        private $nom;
 
         public function crier(){
             echo 'JE SUIS L\'AVATAR KORRA!';
@@ -32,6 +32,11 @@
 
         public function attaque($cible){
             $cible->vie -= $this->atk; //----$cible = défenseur (mako) et $this = attaquant (korra)
+        }
+
+
+        public function getNom(){
+            return $this->nom;
         }
     }
 

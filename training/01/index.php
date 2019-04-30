@@ -23,6 +23,8 @@ else {
 }
 
 
+echo '<p>' . $korra->getNom() . '</p>';
+
 // var_dump($korra);
 // var_dump($mako);
 // var_dump($mako->mort());
