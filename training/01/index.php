@@ -50,6 +50,7 @@ echo '<p>' . $korra->getNom() . '</p>';
     <h1>POO training</h1>
 
     <!-- Lien de la vidéo : https://www.youtube.com/watch?v=xmoOvoiPNhU&list=PLjwdMgw5TTLVDKy8ikf5Df5fnMqY-ec16&index=3-->
+    <!-- Si on a plus accés aux propriétés "private $nom = "nom"; il faut penser à créer des fonctions si jamais on en a besoin à l'extérieur -->
 
 </body>
 
