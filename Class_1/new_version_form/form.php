@@ -3,7 +3,7 @@
 
         public $action; //Propriétés d'un formulaire en html "action" et "method"
         public $method;
-        public $surround; // 'p'
+        public $surround = 'p'; // 'p'
         function __construct($action, $method){
 
             $this->action = $action; //__construct est appelé pour créer une représentation d'objet
@@ -39,26 +39,28 @@
             echo $this->surround('<select id="' . $id .'">');
 
             foreach($option as $option){
-                echo '<option value="' . $option . '">'$option'</option>';
+                echo '<option value="' . $option . '">' . $option . '</option>';
             }
 
             echo $this->surround('</select>');
         } //fonction select pour la sélection du genre et création d'une boucle foreach pour chaque élément
 
         public function textarea(){
-            echo '<textarea></textarea>';
+            echo $this->surround('<textarea></textarea>');
         }
 
-        public function checkbox(){
-
+        public function checkbox($check, $id, $name){
+            foreach($check as $check){
+                echo $this->surround('<input type="checkbox" id="' . $id . '" name="' . $name . '" value="' . $check . '"/>' . $check . '') ;
+            }
         }
 
-        public function submit(){
-
+        public function submit($type, $id, $name, $value){
+            echo $this->surround('<input type="' . $type . '" id="' .$id . '" name="' . $name . '" value="' . $value. '"/>');
         }
 
         public function end(){
-
+            echo '</form>';
         }
     }
 
