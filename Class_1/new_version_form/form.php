@@ -23,15 +23,15 @@
 
         } //fonction create pour le début de formulaire
 
-        public function label($for){
+        public function label($for, $text){
             
-            echo $this->surround('<label for="' . $for . '">Veuillez inscrire votre nom</label>');
+            echo $this->surround('<label for="' . $for . '">'. $text.'</label>');
 
         } //fonction label pour le titre des champs
 
-        public function input($type, $id, $name, $value){
+        public function input($type, $id, $name, $place){
 
-            echo $this->surround('<input type="' . $type . '" id="' . $id . '" value="' . $value . '" name="' . $name . '">');
+            echo $this->surround('<input type="' . $type . '" id="' . $id . '" placeholder="' . $place . '" name="' . $name . '">');
 
         } //fontion input pour les champs de formulaire, on appelle les attributs d'un input
 
@@ -47,13 +47,13 @@
 
         public function textarea(){
             echo $this->surround('<textarea></textarea>');
-        }
+        } //fonction textarea
 
         public function checkbox($check, $id, $name){
             foreach($check as $check){
                 echo $this->surround('<input type="checkbox" id="' . $id . '" name="' . $name . '" value="' . $check . '"/>' . $check . '') ;
             }
-        }
+        } //fonction de la checkbox et de sa boucle
 
         public function submit($type, $id, $name, $value){
             echo $this->surround('<input type="' . $type . '" id="' .$id . '" name="' . $name . '" value="' . $value. '"/>');
@@ -61,7 +61,7 @@
 
         public function end(){
             echo '</form>';
-        }
+        }//fonction pour la fin du formulaire
     }
 
 
