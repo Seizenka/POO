@@ -2,7 +2,6 @@
 
     class Html{
 
-
         public function StartDoc(){
             echo '<!DOCTYPE html>';
         } //Création d'une fonction pour le doctype html
@@ -43,24 +42,34 @@
             echo '<body></body>';
         } //Création de la fonction de la balise début body
 
-        
+        public function Div($class){
+            echo '<div class="'.$class.'">';
+        } //Création d'une balise div
 
+        public function Img($src, $name){
+            echo '<img src="' .$src . '" alt="' .$name.'" title="'.$name.'"/><p></p>';
+        } //Création de la fonction de la balise img
+
+        public function ALink($link, $element){
+            echo '<a href="'.$link.'"/>'.$element.'</a>';
+        } //Création de la fonction pour le lien a href
+
+        public function EndDiv(){
+            echo '</div>';
+        }
+
+        public function Javascript($js){
+            echo '<script src="'.$js.'"></script>';
+        }
+
+        public function BaliseEndBody(){
+            echo '</body>';
+        } //Fin du body
+
+        public function BaliseEndHtml(){
+            echo '</html>';
+        } //Fin de l'html
 
     }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    
-</body>
-</html>
