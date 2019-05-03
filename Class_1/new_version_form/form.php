@@ -1,4 +1,22 @@
 <?php
+
+            if (isset($_POST['envoyer'])) { 
+                if(!empty($_POST['nom']) && !empty($_POST['prenom'])){
+                    $nom = $_POST['nom'];
+                    $prenom = $_POST['prenom'];
+                    //trim
+                    $nom = trim($nom);
+                    $prenom = trim($prenom);
+                    //sanitize
+                    $nom = filter_var($nom, FILTER_SANITIZE_STRING);
+                    $prenom = filter_var($prenom, FILTER_SANITIZE_STRING);
+                    }
+                }
+                else {
+                    echo 'fail';
+                }
+            
+
     class Form {
 
         public $action; //Propriétés d'un formulaire en html "action" et "method"
