@@ -1,6 +1,6 @@
-body { background-color: #261b42; font-family: 'Source Sans Pro', sans-serif; }
+body { background-color: #261b42; font-family: "Source Sans Pro", sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
 
-.bodyform { background-color: #242466; width: 70%; padding: 20px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 10px; }
+.bodyform { background-color: #242466; width: 70%; padding: 20px; margin: 0 auto; border-radius: 10px; }
 
 .form { color: white; }
 

@@ -15,7 +15,6 @@
             return "<{$this->surround}>$html</{$this->surround}>"; // Pour que la variable soit interprétée par les " il faut rajouter {}
 
         }
-        
 
         public function create(){
 
