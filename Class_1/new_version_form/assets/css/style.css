@@ -1,4 +1,4 @@
-body { background-color: #261b42; font-family: "Source Sans Pro", sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
+body { background-color: #261b42; font-family: "Source Sans Pro", sans-serif; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; margin: 0 auto; }
 
 .bodyform { background-color: #242466; width: 70%; padding: 20px; margin: 0 auto; border-radius: 10px; }
 
@@ -6,7 +6,7 @@ body { background-color: #261b42; font-family: "Source Sans Pro", sans-serif; di
 
 form { text-align: center; }
 
-h1 { color: white; }
+h1 { color: white; text-align: center; }
 
 h2 { text-align: center; }
 /*# sourceMappingURL=style.css.map */
