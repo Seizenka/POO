@@ -1,23 +1,19 @@
-<?php require 'html.php';?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>POO Class-2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
-</head>
-<body>
+<?php require 'html.php'; 
 
 
-
+        $Html = new Html(); //Création d'une nouvelle page HTML
+        echo $Html->StartDoc();
+        echo $Html->BaliseStartHTml();
+        echo $Html->BaliseStartHead();
+        echo $Html->MetaUTF();
+        echo $Html->MetaIE();
+        echo $Html->Title("POO Class-2");
+        echo $Html->MetaViewport();
+        echo $Html->LinkStyle("assets/css/style.css");
+        echo $Html->BaliseEndHead();
+        echo $Html->BaliseStartBody();
 
 
 
-<script src="main.js"></script>
-</head>
-</body>
-</html>
+?>
+
