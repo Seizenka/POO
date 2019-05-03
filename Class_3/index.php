@@ -12,7 +12,7 @@
 </head>
 <body>
     <main id="main">
-        <h1>Formulaire POO : validattion</h1>
+        <h1>Formulaire POO : validation</h1>
     
         <!-- On entoure le formulaire -->
         <section class="bodyform">
